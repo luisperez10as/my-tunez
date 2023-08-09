@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import './index.css'
 import { BrowserRouter } from 'react-router-dom';
 
+
 import { PlayerApp } from './PlayerApp';
 
 import { Provider } from 'react-redux';
@@ -16,8 +17,6 @@ ReactDOM.createRoot(root).render(<React.StrictMode>
   <Provider store={store}>
     <BrowserRouter>
       <PlayerApp />
-      <>
-        Hello</>
     </BrowserRouter>
   </Provider>
 </React.StrictMode>);

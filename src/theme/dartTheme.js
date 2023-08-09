@@ -1,16 +1,29 @@
-import { createTheme } from '@mui/material';
-import { grey, red } from '@mui/material/colors';
+import { createTheme } from "@mui/material";
+import { blue, red } from "@mui/material/colors";
 
 export const dartTheme = createTheme({
   palette: {
     primary: {
-      main: grey[100]
+      main: blue[700],
     },
     secondary: {
-      main: '#543884'
+      main: "#543884",
     },
     error: {
-      main: red.A400
-    }
-  }
+      main: red.A400,
+    },
+    MuiIconButton: {
+      color: blue[700],
+    },
+  },
+  components: {
+    MuiIconButton: {
+      styleOverrides: {
+        root: {
+          color: blue[700], 
+        },
+      },
+    },
+   
+  },
 });
